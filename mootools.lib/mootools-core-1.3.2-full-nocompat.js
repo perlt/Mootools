@@ -69,7 +69,6 @@ var instanceOf = this.instanceOf = function(item, object){
 	}
 	return item instanceof object;
 };
-
 // Function overloading
 
 var Function = this.Function;

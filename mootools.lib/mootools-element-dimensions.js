@@ -72,6 +72,7 @@ Element.implement({
 		return position;
 	},
 
+    //修补了如果offsetParent就是element本身的一个BUG
 	getOffsetParent: brokenOffsetParent ? function(){
 		var element = this;
 		if (isBody(element) || styleString(element, 'position') == 'fixed') return null;
